@@ -1,2 +1,5 @@
-# loan_default_prediction
-A loan default prediction project repository, covering each stage from initial data processing to cloud deployment.
+# Problem Definition
+
+[dataset] (https://www.kaggle.com/datasets/nikhil1e9/loan-default/data)
+
+
