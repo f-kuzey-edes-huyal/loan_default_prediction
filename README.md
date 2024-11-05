@@ -61,6 +61,8 @@ We don't have a specific installment feature, but we can approximate one by:
 
 ```installment = (12*(LoanAmount/LoanTerm))/Income```
 
+__Feature Engineering Insights from ChatGPT__
 
+-
 
 ### Key Performance Indicators (KPI)
