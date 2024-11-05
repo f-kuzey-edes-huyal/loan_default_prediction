@@ -75,5 +75,7 @@ __Feature Engineering Insights from ChatGPT__
 - Credit Score and Income Interaction: ```CreditScore * Income```
 - High DTI Flag: ```DTIRatio > Threshold```
 - Low Income with High Loan Amount Flag: ```Income < Threshold1 and LoanAmount > Threshold2```
+- Marital Status & Dependents: ```MaritalStatus + "_" + HasDependents```
+- Employment Type and Loan Purpose: ```EmploymentType + "_" + LoanPurpose```
 
 ### Key Performance Indicators (KPI)
