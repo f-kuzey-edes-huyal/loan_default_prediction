@@ -48,6 +48,8 @@ The last column, **`Default`**, is the target variable indicating whether the bo
 
 ### Additional Features through Feature Engineering
 
+Domain knowledge for specific tasks can improve the performance of our classifiers. Until this project, I hadn’t had the opportunity to work on a loan prediction challenge. I reviewed up-to-date articles and also consulted ChatGPT, providing it with the features included in the dataset. ChatGPT was particularly helpful, offering a wealth of insights.
+
 [Prediction of loan default based on multi-model fusion](https://www.sciencedirect.com/science/article/pii/S1877050922000953)
 
 " In this paper, we construct a new feature 'installment_feat' based on two features of the
