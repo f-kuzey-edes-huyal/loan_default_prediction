@@ -45,3 +45,8 @@ The last column, **`Default`**, is the target variable indicating whether the bo
 | MonthsEmployed    | Number of months the borrower has been employed               | 59                        |
 | EmploymentType    | Type of employment (e.g., full-time, part-time, self-employed)| Full-time                 |
 | __Default__       | Target variable indicating if the borrower defaulted          | 1 (Yes), 0 (No)           |
+
+### Additional Features through Feature Engineering
+
+
+### Key Performance Indicators (KPI)
