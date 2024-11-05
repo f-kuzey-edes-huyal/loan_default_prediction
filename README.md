@@ -12,7 +12,7 @@
 
 ### Loan Default Data Overview
 
-This table provides an overview of the key attributes used in a loan default prediction dataset, including a brief description and example values for each feature. These attributes offer insights into various aspects of a borrower's financial profile, loan specifics, and personal information, which are essential for assessing the likelihood of loan default.
+This table provides an overview of the key attributes used in a [loan default prediction dataset]((https://www.kaggle.com/datasets/nikhil1e9/loan-default/data), including a brief description and example values for each feature. These attributes offer insights into various aspects of a borrower's financial profile, loan specifics, and personal information, which are essential for assessing the likelihood of loan default.
 
 - **Loan Information**: Attributes like `LoanID`, `LoanAmount`, `LoanTerm`, `InterestRate`, and `LoanPurpose` provide details about the loan, such as its amount, duration, purpose, and interest rate.
 - **Borrower Financial Profile**: Attributes such as `Income`, `CreditScore`, `NumCreditLines`, and `DTIRatio` reflect the borrower’s financial health, including their income level, credit score, number of credit lines, and debt-to-income ratio.
