@@ -57,6 +57,8 @@ greater the probability of default.
 
 ```installment_fea  = (12* installment)/(annual_inc)```
 
+```installment = (12*(LoanAmount/LoanTerm))/Income```
+
 
 
 ### Key Performance Indicators (KPI)
