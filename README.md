@@ -8,15 +8,7 @@
 
 [sample project](https://www.analyticsvidhya.com/blog/2022/04/predicting-possible-loan-default-using-machine-learning/)
 
-### Loan Default Data Overview
-|                |                |          |
-|:-------------- |:--------------:|---------:|
-| LoanID | NumCreditLines  | MaritalStatus |
-| Age | InterestRate |HasMortgage |
-| Income | LoanTerm | HasDependents |
-| LoanAmount | DTIRatio | LoanPurpose |
-| CreditScore | Education | HasCoSigner |
-| MonthsEmployed | EmploymentType | __Default__ |
+
 
 ### Loan Default Data Overview
 
@@ -31,21 +23,21 @@ The last column, **`Default`**, is the target variable indicating whether the bo
 
 | Attribute         | Description                                                   | Example Values            |
 |:------------------|:--------------------------------------------------------------|---------------------------|
-| LoanID            | Unique identifier for each loan                               | 123456                    |
+| LoanID            | A unique identifier for each loan                             | VFVJ0MCK4P                |
 | NumCreditLines    | Number of open credit lines the borrower has                  | 5                         |
 | MaritalStatus     | Marital status of the borrower                                | Single, Married           |
-| Age               | Age of the borrower                                           | 35                        |
-| InterestRate      | Annual interest rate of the loan                              | 3.5%                      |
+| Age               | The age of the borrower                                       | 48                        |
+| InterestRate      | Annual interest rate of the loan                              | 15.29                     |
 | HasMortgage       | Indicates if the borrower has an existing mortgage            | Yes, No                   |
-| Income            | Annual income of the borrower                                 | $50,000                   |
-| LoanTerm          | Duration of the loan in months or years                       | 36 months                 |
+| Income            | The annual income of the borrowerr                            | 118989                    |
+| LoanTerm          | Duration of the loan in months                                | 60                        |
 | HasDependents     | Indicates if the borrower has dependents                      | Yes, No                   |
-| LoanAmount        | Total amount of the loan                                      | $10,000                   |
-| DTIRatio          | Debt-to-Income ratio of the borrower                          | 30%                       |
-| LoanPurpose       | Purpose of the loan                                           | Car, Education, Business  |
-| CreditScore       | Credit score of the borrower                                  | 720                       |
+| LoanAmount        | The amount of money being borrowed                            | 230883                    |
+| DTIRatio          | Debt-to-Income ratio of the borrower                          | 0.76                      |
+| LoanPurpose       | Purpose of the loan                                           | Auto, Home, Business      |
+| CreditScore       | Credit score of the borrower                                  | 695                       |
 | Education         | Education level of the borrower                               | High School, Bachelor's   |
 | HasCoSigner       | Indicates if there is a co-signer on the loan                 | Yes, No                   |
-| MonthsEmployed    | Number of months the borrower has been employed               | 120                       |
+| MonthsEmployed    | Number of months the borrower has been employed               | 59                        |
 | EmploymentType    | Type of employment (e.g., full-time, part-time, self-employed)| Full-time                 |
 | __Default__       | Target variable indicating if the borrower defaulted          | 1 (Yes), 0 (No)           |
