@@ -66,5 +66,14 @@ __Feature Engineering Insights from ChatGPT__
 - Income-to-Loan Ratio: ```Income / LoanAmount```
 - Employment Stability: ```MonthsEmployed / Age```
 - Loan Payment-to-Income Ratio: ```LoanAmount / (Income * LoanTerm)```
+- Credit Utilization Ratio: ```LoanAmount / NumCreditLines```
+- Credit Age Factor: ```Age / NumCreditLines```
+- Dependents-to-Income Ratio: ```Income / (Number of Dependents + 1)```
+- Loan Burden per Dependent: ```LoanAmount / (Number of Dependents + 1)```
+- Interest Payment Burden: ```LoanAmount * InterestRate / 100```
+- Income to Interest Ratio: ```Income / InterestRate```
+- Credit Score and Income Interaction: ```CreditScore * Income```
+- High DTI Flag: ```DTIRatio > Threshold```
+- Low Income with High Loan Amount Flag: ```Income < Threshold1 and LoanAmount > Threshold2```
 
 ### Key Performance Indicators (KPI)
