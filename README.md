@@ -17,3 +17,35 @@
 | LoanAmount | DTIRatio | LoanPurpose |
 | CreditScore | Education | HasCoSigner |
 | MonthsEmployed | EmploymentType | __Default__ |
+
+### Loan Default Data Overview
+
+This table provides an overview of the key attributes used in a loan default prediction dataset, including a brief description and example values for each feature. These attributes offer insights into various aspects of a borrower's financial profile, loan specifics, and personal information, which are essential for assessing the likelihood of loan default.
+
+- **Loan Information**: Attributes like `LoanID`, `LoanAmount`, `LoanTerm`, `InterestRate`, and `LoanPurpose` provide details about the loan, such as its amount, duration, purpose, and interest rate.
+- **Borrower Financial Profile**: Attributes such as `Income`, `CreditScore`, `NumCreditLines`, and `DTIRatio` reflect the borrower’s financial health, including their income level, credit score, number of credit lines, and debt-to-income ratio.
+- **Personal Information**: Features like `Age`, `MaritalStatus`, `Education`, `EmploymentType`, and `MonthsEmployed` give additional context about the borrower's background, employment stability, and household characteristics.
+- **Additional Risk Indicators**: Fields like `HasMortgage`, `HasDependents`, and `HasCoSigner` indicate additional financial obligations or support, which may impact the borrower’s repayment capacity.
+
+The last column, **`Default`**, is the target variable indicating whether the borrower defaulted on the loan (1 for defaulted, 0 for not defaulted). This label serves as the output for training predictive models to forecast default risk based on the borrower and loan features.
+
+| Attribute         | Description                                                   | Example Values            |
+|:------------------|:--------------------------------------------------------------|---------------------------|
+| LoanID            | Unique identifier for each loan                               | 123456                    |
+| NumCreditLines    | Number of open credit lines the borrower has                  | 5                         |
+| MaritalStatus     | Marital status of the borrower                                | Single, Married           |
+| Age               | Age of the borrower                                           | 35                        |
+| InterestRate      | Annual interest rate of the loan                              | 3.5%                      |
+| HasMortgage       | Indicates if the borrower has an existing mortgage            | Yes, No                   |
+| Income            | Annual income of the borrower                                 | $50,000                   |
+| LoanTerm          | Duration of the loan in months or years                       | 36 months                 |
+| HasDependents     | Indicates if the borrower has dependents                      | Yes, No                   |
+| LoanAmount        | Total amount of the loan                                      | $10,000                   |
+| DTIRatio          | Debt-to-Income ratio of the borrower                          | 30%                       |
+| LoanPurpose       | Purpose of the loan                                           | Car, Education, Business  |
+| CreditScore       | Credit score of the borrower                                  | 720                       |
+| Education         | Education level of the borrower                               | High School, Bachelor's   |
+| HasCoSigner       | Indicates if there is a co-signer on the loan                 | Yes, No                   |
+| MonthsEmployed    | Number of months the borrower has been employed               | 120                       |
+| EmploymentType    | Type of employment (e.g., full-time, part-time, self-employed)| Full-time                 |
+| __Default__       | Target variable indicating if the borrower defaulted          | 1 (Yes), 0 (No)           |
