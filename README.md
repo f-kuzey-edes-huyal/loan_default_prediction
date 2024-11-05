@@ -8,7 +8,7 @@
 
 [sample project](https://www.analyticsvidhya.com/blog/2022/04/predicting-possible-loan-default-using-machine-learning/)
 
-|  |
+|  | | |
 | --------------- | --------------- | --------------- |
 | LoanID | NumCreditLines  | MaritalStatus |
 | Age | InterestRate |HasMortgage |
