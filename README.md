@@ -81,3 +81,6 @@ __Feature Engineering Insights from ChatGPT__
 - Employment Type and Loan Purpose: ```EmploymentType + "_" + LoanPurpose```
 
 ### Key Performance Indicators (KPI)
+
+- ROC-AUC Score
+- F1 Score
