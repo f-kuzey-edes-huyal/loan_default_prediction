@@ -48,5 +48,15 @@ The last column, **`Default`**, is the target variable indicating whether the bo
 
 ### Additional Features through Feature Engineering
 
+[Prediction of loan default based on multi-model fusion](https://www.sciencedirect.com/science/article/pii/S1877050922000953)
+
+" In this paper, we construct a new feature 'installment_feat' based on two features of the
+original dataset, installment (the amount of monthly installment of the loan) and annual_inc (annual income).
+A larger value of 'installment_feat' means the greater the pressure on the lender to repay the debt and the
+greater the probability of default.
+
+```installment_fea  = (12* installment)/(annual_inc)```
+
+
 
 ### Key Performance Indicators (KPI)
