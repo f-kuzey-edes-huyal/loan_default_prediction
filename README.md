@@ -63,6 +63,8 @@ We don't have a specific installment feature, but we can approximate one by:
 
 __Feature Engineering Insights from ChatGPT__
 
--
+- Income-to-Loan Ratio: ```Income / LoanAmount```
+- Employment Stability: ```MonthsEmployed / Age```
+- Loan Payment-to-Income Ratio: ```LoanAmount / (Income * LoanTerm)```
 
 ### Key Performance Indicators (KPI)
