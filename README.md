@@ -10,6 +10,7 @@
 
 ### Loan Default Data Overview
 
+| -------- | ------- |
 | LoanID | NumCreditLines  | MaritalStatus |
 | Age | InterestRate |HasMortgage |
 | Income | LoanTerm | HasDependents |
