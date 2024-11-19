@@ -19,6 +19,9 @@ import pickle
 import matplotlib.pyplot as plt
 from sklearn.metrics import precision_recall_curve, average_precision_score
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
+import pickle
+from sklearn.utils.class_weight import compute_sample_weight
 
 data = pd.read_csv("data_with_new_features.csv")
 features = pd.read_csv('feature_importances_xgb.csv', nrows = 20)
@@ -61,7 +64,7 @@ X_train_new = dv.transform(train_dicts)
 X_val_new = dv.transform(val_dicts)
 X_test_new = dv.transform(test_dicts)
 
-from sklearn.utils.class_weight import compute_sample_weight
+
 
 sample_weights = compute_sample_weight(class_weight='balanced', y=y_full_train)
 
@@ -111,11 +114,9 @@ for i in [5, 13, 29, 43, 57, 87, 28, 42,1, 93]:
     with open(output_file, 'wb') as f_out:
         pickle.dump((dv, model), f_out)
 
-import pickle
 
-from flask import Flask
-from flask import request
-from flask import jsonify
+
+
 
 
 model_file1 = 'modelxgb_i=5.bin'
@@ -265,7 +266,7 @@ randomfor.to_csv('randomforest_results.csv')
 
 """# Logistic Regression"""
 
-from sklearn.linear_model import LogisticRegression
+
 results = []
 for i in [5, 13, 29, 43, 57, 87, 28, 42,1, 93]:
     print(i)
