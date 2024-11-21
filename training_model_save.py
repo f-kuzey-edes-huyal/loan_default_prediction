@@ -119,88 +119,30 @@ for i in [5, 13, 29, 43, 57, 87, 28, 42,1, 93]:
 
 
 
-model_file1 = 'modelxgb_i=5.bin'
-
-with open(model_file1, 'rb') as f_in:
-    dv1, model1 = pickle.load(f_in)
-
-est1 = model1.predict_proba(X_test_new)
-
-model_file2 = 'modelxgb_i=13.bin'
-
-with open(model_file2, 'rb') as f_in:
-    dv2, model2 = pickle.load(f_in)
-
-est2 = model2.predict_proba(X_test_new)
-
-model_file3 = 'modelxgb_i=29.bin'
-
-with open(model_file3, 'rb') as f_in:
-    dv3, model3 = pickle.load(f_in)
-
-est3 = model3.predict_proba(X_test_new)
-
-
-model_file4 = 'modelxgb_i=43.bin'
-
-with open(model_file4, 'rb') as f_in:
-    dv4, model4 = pickle.load(f_in)
-
-est4 = model4.predict_proba(X_test_new)
-
-
-model_file5 = 'modelxgb_i=57.bin'
-
-with open(model_file5, 'rb') as f_in:
-    dv5, model5 = pickle.load(f_in)
-
-est5 = model5.predict_proba(X_test_new)
 
 
 
-model_file6 = 'modelxgb_i=87.bin'
+model_files = ['modelxgb_i=5.bin', 'modelxgb_i=13.bin', 'modelxgb_i=29.bin', 'modelxgb_i=43.bin', 'modelxgb_i=57.bin', 'modelxgb_i=87.bin',
+'modelxgb_i=28.bin', 'modelxgb_i=42.bin',  'modelxgb_i=1.bin', 'modelxgb_i=93.bin']
 
-with open(model_file6, 'rb') as f_in:
-    dv6, model6 = pickle.load(f_in)
+# Initialize a list to store prediction probabilities
+estimations = []
 
-est6 = model6.predict_proba(X_test_new)
+# Define a function to load a model and make predictions
+def load_and_predict(file_name, data):
+    with open(file_name, 'rb') as f_in:
+        dv, model = pickle.load(f_in)
+    return model.predict_proba(data)
 
-
-model_file7 = 'modelxgb_i=28.bin'
-
-with open(model_file7, 'rb') as f_in:
-    dv7, model7 = pickle.load(f_in)
-
-est7 = model7.predict_proba(X_test_new)
-
-
-model_file8 = 'modelxgb_i=42.bin'
-
-with open(model_file8, 'rb') as f_in:
-    dv8, model8 = pickle.load(f_in)
-
-est8 = model8.predict_proba(X_test_new)
+# Iterate over model files and collect predictions
+for model_file in model_files:
+    estimations.append(load_and_predict(model_file, X_test_new))
 
 
-model_file9 = 'modelxgb_i=1.bin'
+# Alternatively, handle estimations dynamically (e.g., summing probabilities)
+y_pred = sum(estimations) / len(estimations)  # Example: averaging
 
-with open(model_file9, 'rb') as f_in:
-    dv9, model9 = pickle.load(f_in)
-
-est9 = model9.predict_proba(X_test_new)
-
-model_file10 = 'modelxgb_i=93.bin'
-
-with open(model_file10, 'rb') as f_in:
-    dv10, model10 = pickle.load(f_in)
-
-est10 = model10.predict_proba(X_test_new)
-
-list_models = np.array([est1, est2, est3, est4, est5, est6, est7, est8, est9, est10])
-averages = np.average(list_models, axis=0)
-
-y_pred_proba = est1
-y_pred =averages[:,1]
+y_pred =y_pred[:,1]
 y_pred > 0.5
 y_decision = (y_pred >= 0.5).astype(int)
 acc = (y_test == y_decision).mean().round(4)
@@ -261,6 +203,42 @@ randomfor = pd.DataFrame(data = results,columns = ['accuracy', 'f_macro', 'f_wei
 randomfor.to_csv('randomforest_results.csv')
 
 
+model_files2 = ['modelrf_i=5.bin', 'modelrf_i=13.bin', 'modelrf_i=29.bin', 'modelrf_i=43.bin', 'modelrf_i=57.bin', 'modelrf_i=87.bin',
+'modelrf_i=28.bin', 'modelrf_i=42.bin',  'modelrf_i=1.bin', 'modelrf_i=93.bin']
+
+# Initialize a list to store prediction probabilities
+estimations2 = []
+
+# Define a function to load a model and make predictions
+def load_and_predict(file_name, data):
+    with open(file_name, 'rb') as f_in:
+        dv, model = pickle.load(f_in)
+    return model.predict_proba(data)
+
+# Iterate over model files and collect predictions
+for model_file in model_files2:
+    estimations2.append(load_and_predict(model_file, X_test_new))
+
+
+# Alternatively, handle estimations dynamically (e.g., summing probabilities)
+y_pred = sum(estimations2) / len(estimations2)  # Example: averaging
+
+y_pred =y_pred[:,1]
+y_pred > 0.5
+y_decision = (y_pred >= 0.5).astype(int)
+acc = (y_test == y_decision).mean().round(4)
+print(f"Accuracy is calculated as \033[1m{acc}\033[0m.")
+f_macro = f1_score(y_test, y_decision, average='macro').round(4)
+print(f"Macro F1 score is calculated as \033[1m{f_macro}\033[0m.")
+f_weighted = f1_score(y_test, y_decision, average='weighted').round(4)
+print(f"Weighted F1 score is calculated as \033[1m{f_weighted}\033[0m.")
+results.append((acc,f_macro,f_weighted))
+
+# Calculate precision and recall values for different thresholds
+precision2, recall2, thresholds2 = precision_recall_curve(y_test, y_pred)
+
+# Calculate the average precision score
+average_precision2 = average_precision_score(y_test, y_pred)
 
 
 
@@ -296,3 +274,53 @@ logreg.to_csv('logreg_results.csv')
 a = pd.read_csv('logreg_results.csv')
 a.head()
 
+
+model_files3 = ['modellog_i=5.bin', 'modellog_i=13.bin', 'modellog_i=29.bin', 'modellog_i=43.bin', 'modellog_i=57.bin', 'modellog_i=87.bin',
+'modellog_i=28.bin', 'modellog_i=42.bin',  'modellog_i=1.bin', 'modellog_i=93.bin']
+
+# Initialize a list to store prediction probabilities
+estimations3 = []
+
+# Define a function to load a model and make predictions
+def load_and_predict(file_name, data):
+    with open(file_name, 'rb') as f_in:
+        dv, model = pickle.load(f_in)
+    return model.predict_proba(data)
+
+# Iterate over model files and collect predictions
+for model_file in model_files3:
+    estimations3.append(load_and_predict(model_file, X_test_new))
+
+
+# Alternatively, handle estimations dynamically (e.g., summing probabilities)
+y_pred = sum(estimations3 )/ len(estimations3)  # Example: averaging
+
+y_pred =y_pred[:,1]
+y_pred > 0.5
+y_decision = (y_pred >= 0.5).astype(int)
+acc = (y_test == y_decision).mean().round(4)
+print(f"Accuracy is calculated as \033[1m{acc}\033[0m.")
+f_macro = f1_score(y_test, y_decision, average='macro').round(4)
+print(f"Macro F1 score is calculated as \033[1m{f_macro}\033[0m.")
+f_weighted = f1_score(y_test, y_decision, average='weighted').round(4)
+print(f"Weighted F1 score is calculated as \033[1m{f_weighted}\033[0m.")
+results.append((acc,f_macro,f_weighted))
+
+# Calculate precision and recall values for different thresholds
+precision3, recall3, thresholds2 = precision_recall_curve(y_test, y_pred)
+
+# Calculate the average precision score
+average_precision3 = average_precision_score(y_test, y_pred)
+
+# Plot Precision-Recall curve
+plt.figure(figsize=(8, 6))
+plt.plot(recall, precision, label=f'XGBoost (AP = {average_precision:.2f})', color = "cornflowerblue")
+plt.plot(recall2, precision2, label=f'Random Forests (AP = {average_precision2:.2f})', color = "darkred")
+plt.plot(recall3, precision3, label=f'Logistic Regression (AP = {average_precision3:.2f})' ,  color = "darkgreen",)
+plt.xlabel('Recall', fontsize=12)
+plt.ylabel('Precision', fontsize=12)
+plt.title('Precision-Recall Curve', fontsize=14)
+plt.legend(loc='best', fontsize=12)
+plt.grid(alpha=0.4)
+plt.savefig('precision_recall_curve.png', bbox_inches='tight')
+plt.show()
