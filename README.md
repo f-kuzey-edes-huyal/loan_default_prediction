@@ -134,3 +134,5 @@ Using the hyperparameters evaluated from the file, I trained three classifiers f
 In general, I prefer combining the results of the classifiers across multiple random states. Each classifier was trained for 10 random states.
 
 The first issue I encountered was that XGBoost produced the same results for each run. After reviewing the documentation, I modified the booster to ```gblinear```, which resolved the issue. Similarly, Logistic Regression yielded identical results for each run, as it is a deterministic classifier.
+
+![Precision Recall Curve](Precision Recall Curve.png)
