@@ -135,4 +135,6 @@ In general, I prefer combining the results of the classifiers across multiple ra
 
 The first issue I encountered was that XGBoost produced the same results for each run. After reviewing the documentation, I modified the booster to ```gblinear```, which resolved the issue. Similarly, Logistic Regression yielded identical results for each run, as it is a deterministic classifier.
 
+Since the dataset was highly imbalanced, I opted for the Precision-Recall (PR) curve instead of the ROC curve. The figure below compares the average precision scores across the mean of ten runs for each classifier. Among the classifiers, XGBoost demonstrated the best performance.
+
 ![Precision Recall Curve](precision_recall_curve.png)
