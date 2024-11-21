@@ -124,3 +124,13 @@ __Feature Engineering Insights from ChatGPT__
 
 - ROC-AUC Score
 - F1 Score
+
+### Training the Classifiers
+
+Using the hyperparameters evaluated from the file, I trained three classifiers for 10 different random states. To address class imbalance, I used the stratify option while splitting the dataset into training, validation, and test sets. Additionally, I applied class_weight='balanced' for the Random Forest and Logistic Regression classifiers. For XGBoost, I assigned sample weights using:
+
+```sample_weights = compute_sample_weight(class_weight='balanced', y=y_full_train)```
+
+In general, I prefer combining the results of the classifiers across multiple random states. Each classifier was trained for 10 random states.
+
+The first issue I encountered was that XGBoost produced the same results for each run. After reviewing the documentation, I modified the booster to ```gblinear```, which resolved the issue. Similarly, Logistic Regression yielded identical results for each run, as it is a deterministic classifier.
