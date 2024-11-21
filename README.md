@@ -127,7 +127,7 @@ __Feature Engineering Insights from ChatGPT__
 
 ### Training the Classifiers
 
-Using the hyperparameters evaluated from the file, I trained three classifiers for 10 different random states. To address class imbalance, I used the stratify option while splitting the dataset into training, validation, and test sets. Additionally, I applied class_weight='balanced' for the Random Forest and Logistic Regression classifiers. For XGBoost, I assigned sample weights using:
+Using the hyperparameters evaluated from the file, I trained three classifiers for 10 different random states. To address class imbalance, I used the stratify option while splitting the dataset into training, validation, and test sets. Additionally, I applied ```class_weight='balanced'``` for the Random Forest and Logistic Regression classifiers. For XGBoost, I assigned sample weights using:
 
 ```sample_weights = compute_sample_weight(class_weight='balanced', y=y_full_train)```
 
