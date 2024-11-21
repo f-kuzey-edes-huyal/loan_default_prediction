@@ -1,9 +1,7 @@
 
 # Setup and Usage Guide
 
-1. Navigate to the Project Folder
- 
-```cd loan_default_prediction```
+1. Navigate to the Project Folder : ```cd loan_default_prediction```
 
 2. Create a Virtual Environment
 
