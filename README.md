@@ -2,48 +2,73 @@
 # Setup and Usage Guide
 
 1. Navigate to the Project Folder
-
+ 
 ```cd loan_default_prediction```
 
 2. Create a Virtual Environment
+
 ```python -m venv venv```
+
 3. Open the Project in Visual Studio Code
+ 
 ```code .```
+
 4. Activate the Virtual Environment
+
 ```venv\Scripts\activate```
+
 5. Upgrade pip
+
 ```python -m pip install --upgrade pip```
+
 6. Install Required Dependencies
+ 
 ```pip install -r requirements2.txt```
+
 7. Train the Model and Save It
+
 ```python training_model_save.py```
+
 8. Test the Model
+
 To test your trained model:
+
 ```python test_model.py```
+
 9. Test Your Model with FastAPI Server
+
 Start the FastAPI server:
+
 ```uvicorn main:app --reload```
+
 main refers to the main.py file.
 app is the FastAPI application instance (app = FastAPI()) defined in this file.
+
 10. Testing the Model via API
+. 
 Open a new terminal and activate the virtual environment:
 ```venv\Scripts\activate```
 
 ```python test_model.py```
+
 11. Run the Application via Docker
 If you want to use Docker, stop the FastAPI server by pressing Ctrl + C in the terminal. Then follow these steps:
 
 11.1 Create a Docker Image
 
 ```docker build -t default_prediction .```
+
 11.2 Run the Application in Docker
+
 ```docker run -p 8000:8000 default_prediction```
+
 Your code is now running inside a Docker container.
 
 12. Testing the Model with Docker
 Open a new terminal and follow these commands:
 
 ```venv\Scripts\activate```
+
 ```python test_model.py```
 
 
