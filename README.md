@@ -135,7 +135,7 @@ In general, I prefer combining the results of the classifiers across multiple ra
 
 The first issue I encountered was that XGBoost produced the same results for each run. After reviewing the documentation, I modified the booster to ```gblinear```, which resolved the issue. Similarly, Logistic Regression yielded identical results for each run, as it is a deterministic classifier.
 
-| Left-aligned | Center-aligned | Right-aligned | Weighted F1 |
+| Models | Accuracy | Macro F1 | Weighted F1 |
 | :---         |     :---:      |   :---:       | :---:       |
 | Xgboost      |  0.80          |   0.62        |    0.82     |
 | Random Forests     |  0.72          |   0.58        |    0.77     |
