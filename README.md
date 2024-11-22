@@ -128,6 +128,10 @@ __Feature Engineering Insights from ChatGPT__
 - Precision Recall Curve
 
 ### [ Exploratory Data Analysis  (EDA)](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/eda_feature_engineering_last.ipynb)
+
+The figure shows the correlation between different numerical features. I could not observe a strong correlation. If I had observed a strong correlation between different features, I would have preferred to drop one of the columns, since highly correlated features can lead to redundancy and multicollinearity, which may negatively affect the model's performance and interpretability.
+
+
 <img align="center" width="60%" src="correlation_matrix.png">
 
 
