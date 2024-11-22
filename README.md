@@ -41,7 +41,7 @@ Open a new terminal and follow these commands: ```venv\Scripts\activate``` , ```
 
 
 
-# Problem Definition
+### Problem Definition
 
 
 We may need to apply for a loan to make our dreams a reality, such as purchasing a home, starting our dream job, buying a car, or covering our education costs. When applying for a loan, it is important for the relevant bank or company to accurately assess whether we are eligible to repay the borrowed money. If an organization selects a person who is unable to pay back the loan, they will incur a loss. Conversely, if they mistakenly identify a qualified individual as a defaulter, they risk losing that customer. With this project, I aim to construct a pipeline that will determine whether a customer will default on their loan.
@@ -164,6 +164,8 @@ The table below presents the Accuracy, Macro F1, and Weighted F1 scores averaged
 Since the dataset was highly imbalanced, I opted for the Precision-Recall (PR) curve instead of the ROC curve. The figure below compares the average precision scores across the mean of ten runs for each classifier. Among the classifiers, XGBoost demonstrated the best performance.
 
 ![Precision Recall Curve](precision_recall_curve.png)
+
+### Model Deployment
 
 ### Acknowledgements
 
