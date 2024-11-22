@@ -127,7 +127,7 @@ __Feature Engineering Insights from ChatGPT__
 - Weighted F1 Score
 - Precision Recall Curve
 
-### Exploratory Data Analysis  (EDA)
+[### Exploratory Data Analysis  (EDA)](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/eda_feature_engineering_last.ipynb)
 <img align="center" width="60%" src="correlation_matrix.png">
 
 
