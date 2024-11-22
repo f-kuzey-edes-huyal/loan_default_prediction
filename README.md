@@ -150,7 +150,10 @@ Younger individuals (under 30) are more prone to default compared to other age g
 
 
 ### [Hyperparameter Tuning](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/hyperparemeter_and_feature_importance_last.ipynb) 
-I decided to use three algorithms: XGBoost, Random Forest, and Logistic Regression. I performed hyperparameter tuning using ```RandomizedSearchCV```. After the hyperparameter search, I selected the 20 most relevant features using the Random Forest algorithm.
+
+```RandomizedSearchCV``` is a method in machine learning used for hyperparameter tuning. It is part of the ```scikit-learn``` library and is designed to optimize the performance of a model by searching for the best combination of hyperparameters within a given range. Unlike ```GridSearchCV```, which exhaustively tests all possible combinations of hyperparameters, RandomizedSearchCV randomly selects a subset of combinations to evaluate. This makes it faster and more efficient, especially when the parameter space is large.
+
+I decided to use three algorithms: ```XGBoost```, ```Random Forest```, and ```Logistic Regression```. I performed hyperparameter tuning using ```RandomizedSearchCV```. After the hyperparameter search, I selected the 20 most relevant features using the Random Forest algorithm.
 
 <img align="center" width="90%" src="feature_importance.png">
 
