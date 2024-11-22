@@ -127,10 +127,23 @@ __Feature Engineering Insights from ChatGPT__
 
 ### Training the Classifiers
 
-Using the hyperparameters evaluated from the file, I trained three classifiers for 10 different random states. To address class imbalance, I used the stratify option while splitting the dataset into training, validation, and test sets. Additionally, I applied class_weight='balanced' for the Random Forest and Logistic Regression classifiers. For XGBoost, I assigned sample weights using:
+Using the hyperparameters evaluated from the file, I trained three classifiers for 10 different random states. To address class imbalance, I used the stratify option while splitting the dataset into training, validation, and test sets. Additionally, I applied ```class_weight='balanced'``` for the Random Forest and Logistic Regression classifiers. For XGBoost, I assigned sample weights using:
 
 ```sample_weights = compute_sample_weight(class_weight='balanced', y=y_full_train)```
 
 In general, I prefer combining the results of the classifiers across multiple random states. Each classifier was trained for 10 random states.
 
 The first issue I encountered was that XGBoost produced the same results for each run. After reviewing the documentation, I modified the booster to ```gblinear```, which resolved the issue. Similarly, Logistic Regression yielded identical results for each run, as it is a deterministic classifier.
+
+The table below presents the Accuracy, Macro F1, and Weighted F1 scores averaged over ten random states.
+
+| Models | Accuracy | Macro F1 | Weighted F1 |
+| :---         |     :---:      |   :---:       | :---:       |
+| Xgboost      |  0.80          |   0.62        |    0.82     |
+| Random Forests     |  0.72          |   0.58        |    0.77     |
+| Logistic Regression     |  0.62          |   0.51        |    0.69     |
+
+
+Since the dataset was highly imbalanced, I opted for the Precision-Recall (PR) curve instead of the ROC curve. The figure below compares the average precision scores across the mean of ten runs for each classifier. Among the classifiers, XGBoost demonstrated the best performance.
+
+![Precision Recall Curve](precision_recall_curve.png)
