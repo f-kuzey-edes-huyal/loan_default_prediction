@@ -129,7 +129,7 @@ I decided to use three algorithms: XGBoost, Random Forest, and Logistic Regressi
 
 <img align="center" width="90%" src="feature_importance.png">
 
-![Feature Importance](feature_importance.png)
+
 
 
 ### Training the Classifiers
