@@ -172,7 +172,7 @@ I deployed my model using FastAPI, which is an alternative to Flask. I created a
 
 The [main.py](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/main.py)   file is created for FastAPI deployment. To deploy the model, first activate your virtual environment and run the following command in the terminal:
 ```uvicorn main:app --reload```
-Then, you can test your model by opening a new terminal, activating the virtual environment using venv\Scripts\activate, and making requests to the API, using [test_model.py](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/test_model.py ). You have write ```python test_model.py``` to the new terminal. 
+Then, you can test your model by opening a new terminal, activating the virtual environment using venv\Scripts\activate, and making requests to the API, using [test_model.py](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/test_model.py ). You have to write ```python test_model.py``` to the new terminal. 
 
 ### Acknowledgements
 
