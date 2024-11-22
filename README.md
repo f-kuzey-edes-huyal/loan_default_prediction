@@ -160,7 +160,7 @@ I decided to use three algorithms: ```XGBoost```, ```Random Forest```, and ```Lo
 
 
 
-### Training the Classifiers
+### [Training the Classifiers](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/training_model_save.py)
 
 Using the hyperparameters evaluated from the file, I trained three classifiers for 10 different random states. To address class imbalance, I used the stratify option while splitting the dataset into training, validation, and test sets. Additionally, I applied ```class_weight='balanced'``` for the Random Forest and Logistic Regression classifiers. For XGBoost, I assigned sample weights using:
 
