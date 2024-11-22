@@ -142,6 +142,8 @@ The figure below shows that the dataset is highly imbalanced. We need to take th
 
 <img align="center" width="70%" src="target_distribution.png">
 
+The figure below shows the distribution of numerical features for Default and Non-Default classes using joy plots. Joy plots are a visualization technique that overlays density plots for different categories, allowing for a clear comparison of their distributions while maintaining a visually appealing design. This makes it easier to observe differences and patterns between the Default and Non-Default classes across the numerical features.
+
 <img align="center" width="70%" src="joy_plots_numeric.png">
 
 
