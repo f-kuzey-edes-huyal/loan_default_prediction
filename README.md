@@ -122,8 +122,10 @@ __Feature Engineering Insights from ChatGPT__
 
 ### Key Performance Indicators (KPI)
 
-- ROC-AUC Score
-- F1 Score
+- Accuracy
+- Macro F1 Score
+- Weighted F1 Score
+- Precision Recall Curve
 
 ### Exploratory Data Analysis  (EDA)
 <img align="center" width="60%" src="correlation_matrix.png">
