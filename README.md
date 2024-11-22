@@ -169,7 +169,6 @@ Since the dataset was highly imbalanced, I opted for the Precision-Recall (PR) c
 
 I deployed my model using FastAPI, which is an alternative to Flask. I created a small project to demonstrate FastAPI, explain its features, and show how to use it. You can visit [my project](https://github.com/f-kuzey-edes-huyal/fastapi-project) for a more detailed description. The reason I chose FastAPI is that it appeared to be more commonly requested in job applications.
 
-The [main.py]
 
 The [main.py](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/main.py)   file is created for FastAPI deployment. To deploy the model, first activate your virtual environment and run the following command in the terminal:
 ```uvicorn main:app --reload```
