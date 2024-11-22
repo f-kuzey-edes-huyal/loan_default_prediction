@@ -127,6 +127,8 @@ __Feature Engineering Insights from ChatGPT__
 ### Hyperparameter Tuning 
 I decided to use three algorithms: XGBoost, Random Forest, and Logistic Regression. I performed hyperparameter tuning using ```RandomizedSearchCV```. After the hyperparameter search, I selected the 20 most relevant features using the Random Forest algorithm.
 
+<img align="right" width="33%" src="feature_importance.png">
+
 ![Feature Importance](feature_importance.png)
 
 
