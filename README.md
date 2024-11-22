@@ -124,6 +124,11 @@ __Feature Engineering Insights from ChatGPT__
 
 - ROC-AUC Score
 - F1 Score
+### Hyperparameter Tuning 
+I decided to use three algorithms: XGBoost, Random Forest, and Logistic Regression. I performed hyperparameter tuning using ```RandomizedSearchCV```. After the hyperparameter search, I selected the 20 most relevant features using the Random Forest algorithm.
+
+![Feature Importance](feature_importance.png)
+
 
 ### Training the Classifiers
 
