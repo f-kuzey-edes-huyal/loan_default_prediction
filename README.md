@@ -146,6 +146,7 @@ The figure below shows the distribution of numerical features for Default and No
 
 <img align="center" width="70%" src="joy_plots_numeric.png">
 
+Younger individuals (under 30) are more prone to default compared to other age groups. Additionally, the likelihood of default increases for individuals with lower income, higher loan amounts, and higher interest rates.
 
 
 ### Hyperparameter Tuning 
