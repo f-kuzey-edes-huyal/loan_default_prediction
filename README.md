@@ -149,7 +149,7 @@ The figure below shows the distribution of numerical features for Default and No
 Younger individuals (under 30) are more prone to default compared to other age groups. Additionally, the likelihood of default increases for individuals with lower income, higher loan amounts, and higher interest rates.
 
 
-### Hyperparameter Tuning 
+### [Hyperparameter Tuning](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/hyperparemeter_and_feature_importance_last.ipynb) 
 I decided to use three algorithms: XGBoost, Random Forest, and Logistic Regression. I performed hyperparameter tuning using ```RandomizedSearchCV```. After the hyperparameter search, I selected the 20 most relevant features using the Random Forest algorithm.
 
 <img align="center" width="90%" src="feature_importance.png">
