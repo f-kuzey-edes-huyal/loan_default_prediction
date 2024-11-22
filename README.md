@@ -90,9 +90,9 @@ The last column, **`Default`**, is the target variable indicating whether the bo
 ### Key Performance Indicators (KPI)
 
 - Accuracy
-- Macro F1 Score
-- Weighted F1 Score
-- Precision Recall Curve
+- Macro F1 Score: The Macro F1 Score is the average F1 Score calculated independently for each class, without taking the class distribution into account. It is particularly useful when you want to evaluate the model's performance equally across all classes, regardless of their size.
+- Weighted F1 Score: The Weighted F1 Score is a variation that accounts for class imbalance by assigning weights based on the number of true instances for each class.
+- Precision Recall Curve; The Precision-Recall Curve (PR Curve) visualizes the tradeoff between Precision and Recall for different decision thresholds of a classification model.
 
 ### [ Exploratory Data Analysis  (EDA)](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/eda_feature_engineering_last.ipynb)
 
