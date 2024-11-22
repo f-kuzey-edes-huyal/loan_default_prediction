@@ -86,26 +86,6 @@ The last column, **`Default`**, is the target variable indicating whether the bo
 | EmploymentType    | Type of employment (e.g., full-time, part-time, self-employed)| Full-time                 |
 | __Default__       | Target variable indicating if the borrower defaulted          | 1 (Yes), 0 (No)           |
 
-### Additional Features through Feature Engineering
-
-Domain knowledge for specific tasks can improve the performance of our classifiers. Until this project, I hadn’t had the opportunity to work on a loan prediction challenge. I reviewed up-to-date articles and also consulted ChatGPT, providing it with the features included in the dataset. ChatGPT was particularly helpful, offering a wealth of insights.
-
-
-
-[__Feature Engineering Insights from ChatGPT__](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/eda_feature_engineering_last.ipynb)
-
-- Income-to-Loan Ratio: ```Income / LoanAmount```
-- Employment Stability: ```MonthsEmployed / Age```
-- Loan Payment-to-Income Ratio: ```LoanAmount / (Income * LoanTerm)```
-- Credit Utilization Ratio: ```LoanAmount / NumCreditLines```
-- Credit Age Factor: ```Age / NumCreditLines```
-- Interest Payment Burden: ```LoanAmount * InterestRate / 100```
-- Income to Interest Ratio: ```Income / InterestRate```
-- Credit Score and Income Interaction: ```CreditScore * Income```
-- High DTI Flag: ```DTIRatio > Threshold```
-- Marital Status & Dependents: ```MaritalStatus + "_" + HasDependents```
-- Employment Type and Loan Purpose: ```EmploymentType + "_" + LoanPurpose```
-
 
 ### Key Performance Indicators (KPI)
 
@@ -134,6 +114,27 @@ The figure below shows the distribution of numerical features for Default and No
 <img align="center" width="70%" src="joy_plots_numeric.png">
 
 Younger individuals (under 30) are more prone to default compared to other age groups. Additionally, the likelihood of default increases for individuals with lower income, higher loan amounts, and higher interest rates.
+
+#### Additional Features through Feature Engineering
+
+Domain knowledge for specific tasks can improve the performance of our classifiers. Until this project, I hadn’t had the opportunity to work on a loan prediction challenge. I reviewed up-to-date articles and also consulted ChatGPT, providing it with the features included in the dataset. ChatGPT was particularly helpful, offering a wealth of insights.
+
+
+
+[__Feature Engineering Insights from ChatGPT__](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/eda_feature_engineering_last.ipynb)
+
+- Income-to-Loan Ratio: ```Income / LoanAmount```
+- Employment Stability: ```MonthsEmployed / Age```
+- Loan Payment-to-Income Ratio: ```LoanAmount / (Income * LoanTerm)```
+- Credit Utilization Ratio: ```LoanAmount / NumCreditLines```
+- Credit Age Factor: ```Age / NumCreditLines```
+- Interest Payment Burden: ```LoanAmount * InterestRate / 100```
+- Income to Interest Ratio: ```Income / InterestRate```
+- Credit Score and Income Interaction: ```CreditScore * Income```
+- High DTI Flag: ```DTIRatio > Threshold```
+- Marital Status & Dependents: ```MaritalStatus + "_" + HasDependents```
+- Employment Type and Loan Purpose: ```EmploymentType + "_" + LoanPurpose```
+
 
 
 ### [Hyperparameter Tuning](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/hyperparemeter_and_feature_importance_last.ipynb) 
