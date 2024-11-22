@@ -135,7 +135,7 @@ Domain knowledge for specific tasks can improve the performance of our classifie
 - Marital Status & Dependents: ```MaritalStatus + "_" + HasDependents```
 - Employment Type and Loan Purpose: ```EmploymentType + "_" + LoanPurpose```
 
-After feature engineering, I combined all the original and newly evaluated features into a single file, [data_with_new_features.csv](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/data_with_new_features.csv). This file serves as the starting point for the subsequent steps in the analysis, as demonstrated in the code, and is used for the remainder of the workflow.
+After feature engineering, I combined all the original and newly evaluated features into a single file, [data_with_new_features.csv](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/data_with_new_features.csv). This file serves as the starting point for the subsequent steps in the analysis, as demonstrated in the [code](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/eda_feature_engineering_last.ipynb), and is used for the remainder of the workflow.
 
 ### [Hyperparameter Tuning](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/hyperparemeter_and_feature_importance_last.ipynb) 
 
