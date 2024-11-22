@@ -168,3 +168,7 @@ The table below presents the Accuracy, Macro F1, and Weighted F1 scores averaged
 Since the dataset was highly imbalanced, I opted for the Precision-Recall (PR) curve instead of the ROC curve. The figure below compares the average precision scores across the mean of ten runs for each classifier. Among the classifiers, XGBoost demonstrated the best performance.
 
 ![Precision Recall Curve](precision_recall_curve.png)
+
+### Acknowledgements
+
+I would like to thank Ajith Punnakulah for our numerous discussions during this project. These discussions helped me tremendously with my planning and also code revisions.
