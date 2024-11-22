@@ -90,35 +90,22 @@ The last column, **`Default`**, is the target variable indicating whether the bo
 
 Domain knowledge for specific tasks can improve the performance of our classifiers. Until this project, I hadn’t had the opportunity to work on a loan prediction challenge. I reviewed up-to-date articles and also consulted ChatGPT, providing it with the features included in the dataset. ChatGPT was particularly helpful, offering a wealth of insights.
 
-[Prediction of loan default based on multi-model fusion](https://www.sciencedirect.com/science/article/pii/S1877050922000953)
 
-" In this paper, we construct a new feature 'installment_feat' based on two features of the
-original dataset, installment (the amount of monthly installment of the loan) and annual_inc (annual income).
-A larger value of 'installment_feat' means the greater the pressure on the lender to repay the debt and the
-greater the probability of default."
 
-```installment_fea  = (12* installment)/(annual_inc)```
-
-We don't have a specific installment feature, but we can approximate one by:
-
-```installment = (12*(LoanAmount/LoanTerm))/Income```
-
-__Feature Engineering Insights from ChatGPT__
+[__Feature Engineering Insights from ChatGPT__](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/eda_feature_engineering_last.ipynb)
 
 - Income-to-Loan Ratio: ```Income / LoanAmount```
 - Employment Stability: ```MonthsEmployed / Age```
 - Loan Payment-to-Income Ratio: ```LoanAmount / (Income * LoanTerm)```
 - Credit Utilization Ratio: ```LoanAmount / NumCreditLines```
 - Credit Age Factor: ```Age / NumCreditLines```
-- Dependents-to-Income Ratio: ```Income / (Number of Dependents + 1)```
-- Loan Burden per Dependent: ```LoanAmount / (Number of Dependents + 1)```
 - Interest Payment Burden: ```LoanAmount * InterestRate / 100```
 - Income to Interest Ratio: ```Income / InterestRate```
 - Credit Score and Income Interaction: ```CreditScore * Income```
 - High DTI Flag: ```DTIRatio > Threshold```
-- Low Income with High Loan Amount Flag: ```Income < Threshold1 and LoanAmount > Threshold2```
 - Marital Status & Dependents: ```MaritalStatus + "_" + HasDependents```
 - Employment Type and Loan Purpose: ```EmploymentType + "_" + LoanPurpose```
+
 
 ### Key Performance Indicators (KPI)
 
