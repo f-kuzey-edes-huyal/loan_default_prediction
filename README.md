@@ -134,6 +134,7 @@ The figure shows the correlation between different numerical features. I could n
 
 <img align="center" width="70%" src="correlation_matrix.png">
 
+The figure below shows the mutual information scores with respect to the target variable. Employment Type has the highest mutual information score, which indicates that it provides the most significant amount of information about the target variable and is likely one of the most important predictors in the dataset.
 
 <img align="center" width="70%" src="target_mutual_unformation.png">
 
