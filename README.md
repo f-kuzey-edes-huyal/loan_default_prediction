@@ -1,5 +1,5 @@
 
-# Setup and Usage Guide
+### Setup and Usage Guide
 0. First, make sure you have **Python 3.11.9** installed on your system. 
 
 1. Navigate to the Project Folder : ```cd loan_default_prediction```
