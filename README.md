@@ -138,6 +138,8 @@ The figure below shows the mutual information scores with respect to the target 
 
 <img align="center" width="70%" src="target_mutual_unformation.png">
 
+The figure below shows that the dataset is highly imbalanced. We need to take this into account during training; otherwise, the classifiers are likely to predict all samples as "Non-Default," which is the majority class, leading to poor performance on the minority class.
+
 <img align="center" width="70%" src="target_distribution.png">
 
 <img align="center" width="70%" src="joy_plots_numeric.png">
