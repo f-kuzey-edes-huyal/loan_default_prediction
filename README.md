@@ -174,6 +174,8 @@ The [main.py](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob
 ```uvicorn main:app --reload```
 Then, you can test your model by opening a new terminal, activating the virtual environment using ```venv\Scripts\activate```, and making requests to the API, using [test_model.py](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/test_model.py ). You have to write ```python test_model.py``` to the new terminal. 
 
+For Docker containerization, you will need a [Dockerfile](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/Dockerfile) and two command-line instructions.
+
 ### Acknowledgements
 
 I would like to thank Ajith Punnakulah for our numerous discussions during this project. These discussions helped me tremendously with my planning and also code revisions.
