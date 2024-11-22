@@ -125,7 +125,7 @@ __Feature Engineering Insights from ChatGPT__
 - ROC-AUC Score
 - F1 Score
 
-### Exploratory Data Analysis  
+### Exploratory Data Analysis  (EDA)
 
 
 ### Hyperparameter Tuning 
