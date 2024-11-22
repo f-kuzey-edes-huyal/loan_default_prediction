@@ -132,14 +132,14 @@ __Feature Engineering Insights from ChatGPT__
 The figure shows the correlation between different numerical features. I could not observe a strong correlation. If I had observed a strong correlation between different features, I would have preferred to drop one of the columns, since highly correlated features can lead to redundancy and multicollinearity, which may negatively affect the model's performance and interpretability.
 
 
-<img align="center" width="60%" src="correlation_matrix.png">
+<img align="center" width="70%" src="correlation_matrix.png">
 
 
-<img align="center" width="60%" src="target_mutual_unformation.png">
+<img align="center" width="70%" src="target_mutual_unformation.png">
 
-<img align="center" width="50%" src="target_distribution.png">
+<img align="center" width="70%" src="target_distribution.png">
 
-<img align="center" width="60%" src="joy_plots_numeric.png">
+<img align="center" width="70%" src="joy_plots_numeric.png">
 
 
 
