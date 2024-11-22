@@ -167,7 +167,7 @@ Since the dataset was highly imbalanced, I opted for the Precision-Recall (PR) c
 
 ### Model Deployment
 
-I deployed my model using FastAPI, which is an alternative to Flask. I created a small project to demonstrate FastAPI, explain its features, and show how to use it. You can visit my project for a more detailed description. The reason I chose FastAPI is that it appeared to be more commonly requested in job applications.
+I deployed my model using FastAPI, which is an alternative to Flask. I created a small project to demonstrate FastAPI, explain its features, and show how to use it. You can visit [my project](https://github.com/f-kuzey-edes-huyal/fastapi-project) for a more detailed description. The reason I chose FastAPI is that it appeared to be more commonly requested in job applications.
 
 ### Acknowledgements
 
