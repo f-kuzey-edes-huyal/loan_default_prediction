@@ -125,6 +125,17 @@ __Feature Engineering Insights from ChatGPT__
 - ROC-AUC Score
 - F1 Score
 
+### Exploratory Data Analysis  (EDA)
+
+
+### Hyperparameter Tuning 
+I decided to use three algorithms: XGBoost, Random Forest, and Logistic Regression. I performed hyperparameter tuning using ```RandomizedSearchCV```. After the hyperparameter search, I selected the 20 most relevant features using the Random Forest algorithm.
+
+<img align="center" width="90%" src="feature_importance.png">
+
+
+
+
 ### Training the Classifiers
 
 Using the hyperparameters evaluated from the file, I trained three classifiers for 10 different random states. To address class imbalance, I used the stratify option while splitting the dataset into training, validation, and test sets. Additionally, I applied ```class_weight='balanced'``` for the Random Forest and Logistic Regression classifiers. For XGBoost, I assigned sample weights using:
