@@ -126,17 +126,17 @@ __Feature Engineering Insights from ChatGPT__
 - F1 Score
 
 ### Exploratory Data Analysis  (EDA)
-<img align="center" width="90%" src="correlation_matrix.png">
+<img align="center" width="60%" src="correlation_matrix.png">
 
-<img align="center" width="90%" src="categorical_mutual_information.png">
+<img align="center" width="60%" src="categorical_mutual_information.png">
 
-<img align="center" width="90%" src="target_mutual_unformation.png">
+<img align="center" width="60%" src="target_mutual_unformation.png">
 
-<img align="center" width="90%" src="target_distribution.png">
+<img align="center" width="50%" src="target_distribution.png">
 
-<img align="center" width="90%" src="joy_plots_numeric.png">
+<img align="center" width="60%" src="joy_plots_numeric.png">
 
-<img align="center" width="90%" src="categorical_distribution.png">
+<img align="center" width="60%" src="categorical_distribution.png">
 
 ### Hyperparameter Tuning 
 I decided to use three algorithms: XGBoost, Random Forest, and Logistic Regression. I performed hyperparameter tuning using ```RandomizedSearchCV```. After the hyperparameter search, I selected the 20 most relevant features using the Random Forest algorithm.
