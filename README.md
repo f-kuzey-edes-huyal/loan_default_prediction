@@ -182,6 +182,13 @@ To run the application in the Docker container, use:
 
 ```docker run -p 8000:8000 default_prediction```
 
+To deploy model in the cloud:
+
+```docker login```
+
+```docker tag default_prediction fkuzeyedeshuyal/default_prediction```
+
+```docker push fkuzeyedeshuyal/default_prediction  (docker push <your_docker_hub_username>/language-detection-app)```
 
 ### Acknowledgements
 
