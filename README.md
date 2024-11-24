@@ -190,7 +190,7 @@ Push the correctly tagged image to Docker Hub.
 
 ```docker tag default_prediction fkuzeyedeshuyal/default_prediction```
 
-```docker push fkuzeyedeshuyal/default_prediction  (docker push <your_docker_hub_username>/language-detection-app)```
+```docker push fkuzeyedeshuyal/default_prediction```  (docker push <your_docker_hub_username>/language-detection-app)
 
 ### Acknowledgements
 
