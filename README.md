@@ -196,7 +196,7 @@ Push the correctly tagged image to Docker Hub.
 
 The [link](https://hub.docker.com/r/fkuzeyedeshuyal/default_prediction/tags) includes my docker image.
 
-Deploy Docker Hub image on AWS ECS
+After pushing my image to Docker Hub, I created an Amazon ECS cluster and then created a task to run in the cluster, making some port adjustments. I'm still getting the 'CannotPullContainerError'.
 
 ### Acknowledgements
 
