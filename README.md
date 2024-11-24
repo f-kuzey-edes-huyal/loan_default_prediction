@@ -130,7 +130,6 @@ Domain knowledge for specific tasks can improve the performance of our classifie
 
 After feature engineering, I combined all the original and newly evaluated features into a single file, [data_with_new_features.csv](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/data_with_new_features.csv). This file serves as the starting point for the subsequent steps in the analysis, as demonstrated in the [code](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/eda_feature_engineering_last.ipynb), and is used for the remainder of the workflow.
 
- I prepared a [CSV file](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/feature_importances_xgb.csv) and included the most relevant features sorted by importance scores. I used the first twenty of these features for training
 ### [Hyperparameter Tuning](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/hyperparemeter_and_feature_importance_last.ipynb) 
 
 ```RandomizedSearchCV``` is a method in machine learning used for hyperparameter tuning. It is part of the ```scikit-learn``` library and is designed to optimize the performance of a model by searching for the best combination of hyperparameters within a given range. Unlike ```GridSearchCV```, which exhaustively tests all possible combinations of hyperparameters, RandomizedSearchCV randomly selects a subset of combinations to evaluate. This makes it faster and more efficient, especially when the parameter space is large.
@@ -141,6 +140,7 @@ I decided to use three algorithms: ```XGBoost```, ```Random Forest```, and ```Lo
 
 
 
+ I prepared a [CSV file](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/feature_importances_xgb.csv) and included the most relevant features sorted by importance scores. I used the first twenty of these features for training.
 
 ### [Training the Classifiers](https://github.com/f-kuzey-edes-huyal/loan_default_prediction/blob/main/training_model_save.py)
 
