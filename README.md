@@ -1,3 +1,10 @@
+### Problem Definition
+
+
+We may need to apply for a loan to make our dreams a reality, such as purchasing a home, starting our dream job, buying a car, or covering our education costs. When applying for a loan, it is important for the relevant bank or company to accurately assess whether we are eligible to repay the borrowed money. If an organization selects a person who is unable to pay back the loan, they will incur a loss. Conversely, if they mistakenly identify a qualified individual as a defaulter, they risk losing that customer. With this project, I aim to construct a pipeline that will determine whether a customer will default on their loan.
+
+
+
 
 ### Setup and Usage Guide
 0. First, make sure you have **Python 3.11.9** installed on your system. 
@@ -37,12 +44,6 @@ Open a new terminal and follow these commands: ```venv\Scripts\activate``` , ```
 
 
 
-
-
-### Problem Definition
-
-
-We may need to apply for a loan to make our dreams a reality, such as purchasing a home, starting our dream job, buying a car, or covering our education costs. When applying for a loan, it is important for the relevant bank or company to accurately assess whether we are eligible to repay the borrowed money. If an organization selects a person who is unable to pay back the loan, they will incur a loss. Conversely, if they mistakenly identify a qualified individual as a defaulter, they risk losing that customer. With this project, I aim to construct a pipeline that will determine whether a customer will default on their loan.
 
 
 
