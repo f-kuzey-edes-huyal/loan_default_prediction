@@ -200,4 +200,4 @@ After pushing my image to Docker Hub, I created an Amazon ECS cluster and then c
 
 ### Acknowledgements
 
-I would like to thank Ajith Punnakulah for our numerous discussions during this project. These discussions helped me tremendously with my planning and also code revisions.
+I would like to thank Ajith Punnakula for our numerous discussions during this project. These discussions helped me tremendously with my planning and also code revisions.
