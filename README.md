@@ -192,7 +192,9 @@ Push the correctly tagged image to Docker Hub.
 
 ```docker push fkuzeyedeshuyal/default_prediction```  (docker push <your_docker_hub_username>/language-detection-app)
 
- Deploy Docker Hub image on AWS ECS
+The [link](https://hub.docker.com/r/fkuzeyedeshuyal/default_prediction/tags) includes my docker image.
+
+Deploy Docker Hub image on AWS ECS
 
 ### Acknowledgements
 
