@@ -184,6 +184,8 @@ To run the application in the Docker container, use:
 
 ```docker run -p 8000:8000 default_prediction```
 
+<img align="center" width="90%" src="docker_running.png">
+
 Open a new terminal and activate the virtual environment, then run the script by typing: ```python test_model.py```
 
 To deploy model in the cloud:
