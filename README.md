@@ -196,7 +196,7 @@ Push the correctly tagged image to Docker Hub.
 
 The [link](https://hub.docker.com/r/fkuzeyedeshuyal/default_prediction/tags) includes my docker image.
 
-After pushing my image to Docker Hub, I created an Amazon ECS cluster and then created a task to run in the cluster, making some port adjustments. I first created a cluster, choosing Launch Type as ```AWS Fargate``` and Operating System as ```Linux/x86-64```, which is compatible with my Docker image. Then I started to create a task. In the container section, I provided the URL of my Docker image hosted on Docker Hub. I entered ```8000``` as the container port, which matches the port used by my Docker image. Next, I went back to my cluster, clicked on Tasks, and selected Run New Task. For the security group, I chose to create a new one and configured the source as Anywhere with the type set to HTTP. I'm still getting the 'CannotPullContainerError'.
+After pushing my image to Docker Hub, I created an Amazon ECS cluster and then created a task to run in the cluster, making some port adjustments. I then created a task, choosing Launch Type as ```AWS Fargate``` and Operating System as ```Linux/x86-64```, which is compatible with my Docker image. In the container section, I provided the URL of my Docker image hosted on Docker Hub. I entered ```8000``` as the container port, which matches the port used by my Docker image. Next, I went back to my cluster, clicked on Tasks, and selected Run New Task. For the security group, I chose to create a new one and configured the source as Anywhere with the type set to Custom TCP and Port ```8000```. I'm still getting the 'CannotPullContainerError'.
 
 ### Acknowledgements
 
